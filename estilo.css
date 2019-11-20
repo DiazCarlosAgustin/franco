@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+header{
+    background-color: #F7444E;
+    width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh auto;
+    grid-template-columns: 5% auto 5%;
+}
+nav{
+    grid-row: 1/2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.brand{
+    grid-column: 1/2;
+    font-size: 1.5em;
+    align-self: center;
+    color: white;
+}
+.menu{
+    grid-column: 2/2;
+    align-self: center;
+    text-align: right;
+}
+.menu i{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+.about-me-head{
+    grid-row: 2/2;
+    grid-column: 2/3;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.center span{
+    font-size: 300%;
+    font-style: normal;
+    text-align: left;
+    color: white;
+    display: block;
+}
+.center span:nth-child(2){
+    font-weight: bolder;
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+}
+.body{
+    display: grid;
+    grid-template-rows: 10vh auto auto auto auto 10vh;
+    grid-template-columns: 5% auto 5%;
+}
+.about-me{
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.about-me p{
+    grid-row: 1/2;
+    text-align: center;
+    font-size: calc(1.5em -.1em);
+}
+.about-me .redes{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10vh 0;
+    text-align: center;
+}
+.about-me .redes .red:nth-child(1) {
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+}
+.about-me .redes .red:nth-child(2) {
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+}
+.about-me .redes .red:nth-child(3) {
+    grid-column: 3;
+    align-self: center;
+    justify-self: center;
+}
+.about-me .redes .red i {
+    font-size: 3em;
+    cursor: pointer;
+    color: #F7444E;
+    display: block;
+    margin: 0 0 10px 0;
+}
+.education{
+    grid-row: 3;
+    grid-column: 2;
+    display: grid;
+    grid-row: 5vh auto auto 5vh;
+}
+.head-education{
+    text-align: center;
+    color: #F7444E;
+    font-size: 1.5em;
+}
+.title{
+    margin-top: 2em;
+    display: grid;
+    grid-row: 3;
+    grid-template-rows: 2vh auto 2em auto ;
+    grid-template-columns:auto;
+}
+.uno{
+    grid-row: 2/3;
+    grid-column: 1;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns:auto auto;
+}
+.uno .school{
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: bold;
+    margin: .5em 0 ;
+    align-self: center;
+}
+.uno .date{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+    align-self: center;
+}
+.dos{
+    grid-row: 4;
+}
+.programming{
+    grid-row: 4;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 10vh auto auto;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    height: 100%;
+}
+.head-programming{
+    grid-row: 2;
+    grid-column: 1/4;
+    text-align: center;
+    color: #F7444E;
+    font-size: 1.5em;
+}
+.Lenguajes{
+    margin: 20px 0 20px 0;
+    grid-row: 3;
+    grid-column:1/2 ;
+}
+.Frameworks{
+    margin: 20px 0 20px 0;
+    grid-row: 3;
+    grid-column:2/3 ;
+}
+.Herramientas{
+    margin: 20px 0 20px 0;
+    grid-row: 3;
+    grid-column:3 ;
+}
+.cont h1{
+    color: #F7444E;
+    text-align: center;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+footer{
+    grid-row: 7;
+    grid-column: 1/5;
+    align-self: center;
+    background-color: #F7444E;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    padding: 2em 0;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
